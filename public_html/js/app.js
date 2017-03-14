@@ -1,5 +1,5 @@
 'use strict';
-
+/* App Module */
 var helloWorldApp = angular.module('helloWorldApp', [
     'ngRoute',
     'helloWorldControllers'
@@ -15,6 +15,6 @@ helloWorldApp.config(['$routeProvider', '$locationProvider',
                 templateUrl: 'partials/show.html',
                 controller: 'ShowCtrl'
             });
-        $locationProvider.html5Mode(false).hasPrefix('!');
+        $locationProvider.html5Mode(false).hashPrefix('!');
     }
 ]);
